@@ -25,9 +25,6 @@ public class TeacherController {
     public List<Teacher> getTeacherList(){
         return teacherService.list();
 
-
-
-
     }
     @DeleteMapping("/removeTeacherById/{teacherId}")//删除讲师，根据id删除
     public Boolean removeTeacherById(@PathVariable String teacherId){

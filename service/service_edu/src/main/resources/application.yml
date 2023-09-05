@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  profiles:
+    active: dev #环境配置
+  application:
+    name: service_edu #服务名
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/db01_swxy_edu?serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss #全局日期格式化
+    time-zone: GMT+8
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  #日志

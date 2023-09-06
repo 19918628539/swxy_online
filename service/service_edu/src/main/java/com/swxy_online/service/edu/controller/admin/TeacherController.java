@@ -19,6 +19,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/admin/edu/teacher")
 public class TeacherController {
+
     @Autowired
     private TeacherService teacherService;
     @GetMapping("/getTeacherList")//查询讲师列表

@@ -24,6 +24,7 @@ public class TeacherController {
     private TeacherService teacherService;
     @GetMapping("/getTeacherList")//查询讲师列表
     public List<Teacher> getTeacherList(){
+
         return teacherService.list();
     }
     @DeleteMapping("/removeTeacherById/{teacherId}")//删除讲师，根据id删除

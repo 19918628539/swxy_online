@@ -21,6 +21,7 @@ public class GlobalExceptionHandler {
      @ExceptionHandler(BadSqlGrammarException.class)
      @ResponseBody
      public R error(BadSqlGrammarException  e){
+
          log.error(e.getMessage());
          return R.setResult(ResultCodeEnum.BAD_SQL_GRAMMAR);
      }
